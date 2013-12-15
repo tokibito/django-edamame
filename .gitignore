@@ -4,3 +4,5 @@
 *.tox
 *.tar.gz
 *.coverage
+build/
+dist/
