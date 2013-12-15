@@ -21,6 +21,7 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages('src'),
     author='Shinya Okano',
+    author_email='tokibito@gmail.com',
     url='https://github.com/tokibito/django-edamame',
     install_requires=['Django'],
     classifiers=[
