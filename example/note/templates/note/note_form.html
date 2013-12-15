@@ -1,0 +1,12 @@
+{% extends 'note/base.html' %}
+
+{% block main %}
+<h1>Note form</h1>
+<form method="post">
+{% csrf_token %}
+<table>
+{{ form }}
+</table>
+<input type="submit">
+</form>
+{% endblock %}

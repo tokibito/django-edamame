@@ -1,0 +1,6 @@
+*.pyc
+*.egg-info
+*.sqlite3
+*.tox
+*.tar.gz
+*.coverage

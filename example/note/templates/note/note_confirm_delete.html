@@ -1,0 +1,10 @@
+{% extends 'note/base.html' %}
+
+{% block main %}
+<h1>Note delete confirm</h1>
+Are you sure it delete "{{ object.title }}"?
+<form method="post">
+{% csrf_token %}
+<input type="submit">
+</form>
+{% endblock %}

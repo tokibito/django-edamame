@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% block main %}{% endblock %}
+<h2>navigation</h2>
+<ul>
+  <li><a href="{% url 'note:index' %}">ListView</a></li>
+  <li><a href="{% url 'note:add' %}">CreateView</a></li>
+</ul>
+{% endblock %}

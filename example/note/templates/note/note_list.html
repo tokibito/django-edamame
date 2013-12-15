@@ -1,0 +1,14 @@
+{% extends 'note/base.html' %}
+
+{% block main %}
+<h1>Note</h1>
+<ul>
+{% for object in object_list %}
+  <li>
+    <a href="{% url 'note:show' pk=object.pk %}">{{ object.title }}</a>
+    <a href="{% url 'note:edit' pk=object.pk %}">edit</a>
+    <a href="{% url 'note:delete' pk=object.pk %}">delete</a>
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}

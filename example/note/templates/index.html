@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Example</h1>
+<ul>
+  <li><a href="{% url 'test_page' %}">TemplateView example</a></li>
+  <li><a href="{% url 'note:index' %}">Generic view example</a></li>
+  <li><a href="{% url 'auth:login' %}">login example</a></li>
+  <li><a href="{% url 'auth:logout' %}">logout example</a></li>
+  <li><a href="{% url 'members_only' %}">decorator example</a></li>
+</ul>
+{% endblock %}

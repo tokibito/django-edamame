@@ -1,0 +1,11 @@
+{% extends 'note/base.html' %}
+
+{% block main %}
+<h1>Note detail</h1>
+<dl>
+  <dt>Title:</dt>
+  <dd>{{ note.title }}<dd>
+  <dt>Text:</dt>
+  <dd>{{ note.text|linebreaksbr }}</dd>
+</dl>
+{% endblock %}
