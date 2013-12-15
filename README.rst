@@ -4,6 +4,9 @@ Django Edamame
 
 One idea of Class-based view module.
 
+.. image:: https://travis-ci.org/tokibito/django-edamame.png
+   :target: https://travis-ci.org/tokibito/django-edamame
+
 Django Edamame gives you inheritable module to bundle the multiple view functions like django.contrib.admin application.
 
 Edamame corresponds to the following problems:
