@@ -85,6 +85,17 @@ In ``urls.py``, use the ``include`` function.
        url(r'note/', include(note_views.urls)),
    )
 
+If you customize views, can inherit the ``BaseModelViews``.
+
+::
+
+   class ModelViews(BaseModelViews):
+       list_view = generic.ListView
+       create_view = generic.CreateView
+       detail_view = generic.DetailView
+       update_view = generic.UpdateView
+       delete_view = generic.DeleteView
+
 Example Project
 ===============
 
