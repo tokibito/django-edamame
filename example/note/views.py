@@ -38,7 +38,7 @@ note_views = NoteViews()
 
 
 class MembersOnlyViews(base.Views):
-    members_only = utils.to_method(render, template_name='members_only')
+    members_only = utils.to_method(render, template_name='members_only.html')
     view_decorators = (
         (login_required, (), {'login_url': 'auth:login'}),
     )
